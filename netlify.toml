@@ -1,0 +1,42 @@
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+# Settings in the [build] context are global and are applied to 
+# all contexts unless otherwise overridden by more specific contexts.
+[build]
+  publish = "out"
+  command = "npm run build && npm run export"
+[[redirects]]
+from = "/radar"
+to = "/"
+status = 301
+[[redirects]]
+from = "/signals-on-flash"
+to = "/signal-monitor"
+status = 301
+[[redirects]]
+from = "/signal-projects"
+to = "/"
+status = 301
+[[redirects]]
+from = "/signal-timing"
+to = "/"
+status = 301
+[[redirects]]
+from = "/device-status"
+to = "/traffic-cameras"
+status = 301
+[[redirects]]
+from = "/ops-overview"
+to = "/"
+status = 301
+[[redirects]]
+from = "/ops-map"
+to = "/"
+status = 301
+[[redirects]]
+from = "/open-data"
+to = "https://data.austintexas.gov/browse?City-of-Austin_Department-=Austin+Transportation&limitTo=datasets"
+status = 301
+[[redirects]]
+from = "/data-tracker"
+to = "https://atd.knack.com/amd#home/"
+status = 301
